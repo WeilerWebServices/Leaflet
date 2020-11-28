@@ -1,0 +1,45 @@
+<div id="toppanel" class="toppanel-wrapper" style="display:none;">
+  <div class="toppanel-column toppanel-column-first">
+    <a href="#" class="toppanel-hide" title="Close">Close welcome panel</a>
+    <a href="#" class="toppanel-logo">
+      <img src="{{static}}/images/leaflet.svg" alt="Welcome to JS Bin">
+    </a>
+    <div class="toppanel-actions{{#unless home}} toppanel-actions-alone{{/unless}}">
+      <div>
+        <a id="createnew" href="{{root}}" class="toppanel-button">New bin</a>
+      </div>
+      <div>
+        {{#if home}}
+        <a href="#" class="toppanel-button homebtn">Open bin...</a>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+
+  <div class="toppanel-column toppanel-stretch">
+  <p>Leaflet playground is a place to easily test out javascript things with the <a href='http://leafletjs.com'>Leaflet</a> maps library.</p>
+  </div>
+  <div class="toppanel-column toppanel-stretch">
+  <p>Powered by <a href='http://jsbin.com'>JSbin</a>. The playground has simpler access to Leaflet versions and plugins, but lacks all of JSbin's awesome pro features.</p>
+  </div>
+  <div class="toppanel-column toppanel-stretch">
+  <p>Quick Leaflet links:</p>
+  <ul><li><a href='https://github.com/Leaflet/Leaflet'>Github</a>
+  <li><a href='http://leafletjs.com/reference.html'>0.7.x API docs</a>
+  <li><a href='http://http://leafletjs.com/reference-1.0.0.html'>1.0.0-rc1 docs</a>
+  </div>
+{{#welcomePanel}}
+
+{{/welcomePanel}}
+</div>
+
+<script>
+// {{topPanel}}
+try {
+  if ({{#if_null topPanel}}localStorage.settings === undefined || localStorage.settings.indexOf('"toppanel":false') === -1{{else}}{{#if topPanel}}true{{else}}false{{/if}}{{/if_null}}) {
+    document.body.className += ' toppanel';
+  }
+} catch (e) {
+  // if there is no localStorage
+}
+</script>

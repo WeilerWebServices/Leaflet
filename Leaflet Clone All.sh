@@ -1,0 +1,16 @@
+git clone https://github.com/Leaflet/Leaflet.git
+git clone https://github.com/Leaflet/Leaflet.draw.git
+git clone https://github.com/Leaflet/Leaflet.markercluster.git
+git clone https://github.com/Leaflet/Leaflet.label.git
+git clone https://github.com/Leaflet/Leaflet.fullscreen.git
+git clone https://github.com/Leaflet/Leaflet.heat.git
+git clone https://github.com/Leaflet/Leaflet.Editable.git
+git clone https://github.com/Leaflet/Leaflet.toolbar.git
+git clone https://github.com/Leaflet/Leafdoc.git
+git clone https://github.com/Leaflet/playground.git
+git clone https://github.com/Leaflet/Leaflet.Icon.Glyph.git
+git clone https://github.com/Leaflet/prosthetic-hand.git
+git clone https://github.com/Leaflet/Leaflet.VectorGrid.git
+git clone https://github.com/Leaflet/Path.Drag.js.git
+git clone https://github.com/Leaflet/Leaflet.TileLayer.NoGap.git
+git clone https://github.com/Leaflet/Leaflet.Graticule.git
